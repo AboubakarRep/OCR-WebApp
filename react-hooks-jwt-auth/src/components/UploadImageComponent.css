@@ -1,0 +1,150 @@
+/* UploadImageComponent.css */
+
+/* Style pour la barre de chargement */
+.loader {
+    border: 4px solid #f3f3f3; /* Couleur de fond de la barre de chargement */
+    border-top: 4px solid #3498db; /* Couleur de la barre de chargement */
+    border-radius: 50%; /* Forme de la barre de chargement (cercle) */
+    width: 30px; /* Largeur de la barre de chargement */
+    height: 30px; /* Hauteur de la barre de chargement */
+    animation: spin 2s linear infinite; /* Animation de rotation */
+    margin: 20px auto; /* Marge autour de la barre de chargement */
+  }
+  
+  /* Animation de rotation pour la barre de chargement */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Style pour la boîte de texte OCR */
+  .ocr-box {
+    border: 2px solid #ddd; /* Bordure de la boîte de texte */
+    border-radius: 8px; /* Coins arrondis de la boîte de texte */
+    padding: 20px; /* Espace à l'intérieur de la boîte de texte */
+    margin-top: 20px; /* Marge supérieure de la boîte de texte */
+  }
+  
+  /* Style pour le titre "Text Extracted by OCR" */
+  .ocr-box h3 {
+    color: #333; /* Couleur du texte */
+    font-size: 24px; /* Taille de la police */
+    margin-bottom: 10px; /* Marge inférieure du titre */
+  }
+  
+  /* Style pour le texte extrait */
+  .ocr-box p {
+    color: #666; /* Couleur du texte */
+    font-size: 18px; /* Taille de la police */
+    line-height: 1.5; /* Hauteur de ligne */
+  }
+
+
+    /* Style pour la boîte de texte qrcode */
+    .qr-code-data {
+      border: 2px solid #ddd; /* Bordure de la boîte de texte */
+      border-radius: 8px; /* Coins arrondis de la boîte de texte */
+      padding: 20px; /* Espace à l'intérieur de la boîte de texte */
+      margin-top: 20px; /* Marge supérieure de la boîte de texte */
+      margin-left: 20px;
+    }
+    
+    /* Style pour le titre "Text Extracted by qrcode" */
+    .qr-code-data h3 {
+      color: #333; /* Couleur du texte */
+      font-size: 24px; /* Taille de la police */
+      margin-bottom: 10px; /* Marge inférieure du titre */
+    }
+    
+    /* Style pour le texte extrait */
+    .qr-code-data p {
+      color: #666; /* Couleur du texte */
+      font-size: 18px; /* Taille de la police */
+      line-height: 1.5; /* Hauteur de ligne */
+    }
+  
+
+        /* Style pour la boîte de texte barcode */
+        .barcode-data {
+          border: 2px solid #ddd; /* Bordure de la boîte de texte */
+          border-radius: 8px; /* Coins arrondis de la boîte de texte */
+          padding: 20px; /* Espace à l'intérieur de la boîte de texte */
+          margin-top: 20px; /* Marge supérieure de la boîte de texte */
+        }
+        
+        /* Style pour le titre "Text Extracted by barcode" */
+        .barcode-data h3 {
+          color: #333; /* Couleur du texte */
+          font-size: 24px; /* Taille de la police */
+          margin-bottom: 10px; /* Marge inférieure du titre */
+        }
+        
+        /* Style pour le texte extrait */
+        .barcode-data p {
+          color: #666; /* Couleur du texte */
+          font-size: 18px; /* Taille de la police */
+          line-height: 1.5; /* Hauteur de ligne */
+        }
+
+        
+        /* ButtonEffects.css */
+
+.button-effect1 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-effect1:hover {
+  background-color: #0056b3;
+}
+
+.button-effect2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-effect2:before,
+.button-effect2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  animation: slidein 2s infinite;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.button-effect3 {
+  background-color: #f00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.button-effect3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+
